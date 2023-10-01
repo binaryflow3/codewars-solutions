@@ -20,3 +20,11 @@ public class Prime {
     return true;
   }
 }
+
+//Solution 2
+
+public class Prime {
+  public static boolean isPrime(int num) {
+    return num > 1 && java.math.BigInteger.valueOf(num).isProbablePrime(20);
+  }
+}
